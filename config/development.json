@@ -1,0 +1,48 @@
+{
+  "env": "development",
+  "server": {
+    "routes": {
+      "cors": true,
+      "timeout": {
+        "server": 1200000,
+        "socket": 1300000
+      }
+    },
+    "port": 42621,
+    "host": "www.example.com"
+  },
+  "database": {
+    "mongo": {
+      "name": "",
+      "host": "",
+      "port": 27017,
+      "username": "",
+      "password": ""
+    }
+  },
+  
+  "logging": {
+    "name": "RAK-RBAC-MS-dev",
+    "level": "debug",
+    "path": "log.txt"
+  },
+  // "swagger_base_path" : "",
+  "swagger_basepath": "/SSO-rbac-ms-dev",
+  "redis_env": {
+    "host": "",
+    "port" : 6379,
+    "password" : ""
+  },
+  "log_topic": {
+    "topic": "LOG_TOPIC_STAGING"
+  },
+  "loggingConfig": {
+    "name": "RAK-RBAC-MS-dev",
+    "level": "debug",
+    "path": "log.txt"
+  },
+  
+  "token_secret_key": "HHHTTTT",
+  
+  "ui_base_path": "/example/#"
+}

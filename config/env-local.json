@@ -1,0 +1,47 @@
+{
+  "env": "local",
+  "server": {
+    "routes": {
+      "cors": true,
+      "timeout": {
+        "server": 1200000,
+        "socket": 1300000
+      }
+    },
+    "port": 42621,
+    "host": "0.0.0.0:42621"
+
+  },
+  "database": {
+    "mongo": {
+      "name": "RAK_RBAC_MS_DEV",
+      "host": "0.0.0.0",
+      "port": 27017,
+      "username": "",
+      "password": ""
+    }
+  },
+  "logging": {
+    "name": "RAK-RBAC-MS-dev",
+    "level": "debug",
+    "path": "log.txt"
+  },
+  // "swagger_base_path" : "",
+  // "swagger_basepath": "/sso-rbac-ms-dev",
+  "redis_env": {
+    "port": 6379, 
+    "host": "0.0.0.0",
+    "password" : ""
+  },
+  "log_topic": {
+    "topic": "LOG_TOPIC_STAGING"
+  },
+  "loggingConfig": {
+    "name": "RAK-RBAC-MS-dev",
+    "level": "debug",
+    "path": "log.txt"
+  },
+  "token_secret_key": "RAKYYYY",
+  "ui_base_path": "/cu-portal-dev/#"
+}
+ 
